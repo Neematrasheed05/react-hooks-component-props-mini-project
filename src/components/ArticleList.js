@@ -1,9 +1,11 @@
 import React from "react";
-import Article from "./../components/Article"
-import Blogdata from "../data/blog"
+import Article from "./Article"
+import Blogdata from "../data/blog"//data will fetch from here and we will use it our component
 
 function ArticleList(){
-    const all = Blogdata.posts.map((arr) => {
+    const all = Blogdata.posts.map((arr) =>{
+
+    console.log(Blogdata)
         return(
             <Article
             key={arr.id}
